@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+</head>
+<body class="font-Inter" id="body">
+
+  <nav class="absolute z-10 h-screen bg-Off-white w-[260px] top-0 bottom-0 right-0 hidden" id="nav">
+    <div class="flex justify-end mt-[25px] mx-[15px]">
+      <button>
+        <img class="h-[35px] w-[40px] block" src="/assets/images/icon-menu-close.svg" alt="" id="menu-close" onclick="abrirMenu()" >
+      </button>
+    </div>
+    <ul class="mt-[150px]">
+      <li>
+        <a href="" class="block text-[20px] pl-[25px] pb-[35px]">Home</a>
+        <a href="" class="block text-[20px] pl-[25px] pb-[35px]">New</a>
+        <a href="" class="block text-[20px] pl-[25px] pb-[35px]">Popular</a>
+        <a href="" class="block text-[20px] pl-[25px] pb-[35px]">Trending</a>
+        <a href="" class="block text-[20px] pl-[25px] pb-[35px]">Categories</a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <div class="relative z-0">
+      <header class="flex justify-between items-center pt-[25px] px-[15px] lg:pt-[85px] lg:px-[140px] lg:mb-[50px] mb-[30px]">
+          <img src="/assets/images/logo.svg" alt="" id="menu">
+          
+            <ul class="hidden lg:flex lg:flex-row lg:space-x-[35px] lg:absolute lg:z-50 lg:right-0 lg:mr-[140px] lg:text-[18px] text-Dark-grayish-blue font-medium cursor-pointer"> 
+              <li>Home</li>
+              <li>New</li>
+              <li>Popular</li>
+              <li>Trending</li>
+              <li>Categories</li>
+            </ul>
+          
+          <button id="menu">
+            <img class="w-[45px] h-[20px] lg:hidden" src="/assets/images/icon-menu.svg" alt="" id="menu" onclick="abrirMenu()">
+          </button>
+      </header>
+  </div>
+
+  <section>
+    <div class="hero">
+      <img class="img-hero-mobile" src="/assets/images/image-web-3-mobile.jpg" alt="Hero Image">
+      <img class="img-hero-desktop" src="/assets/images/image-web-3-desktop.jpg" alt="Hero Image">
+      <div class="hero-flex">
+        <div class="hero-flex-title">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="hero-flex-btn">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <h2>New</h2>
+      <h3>Hydrogen VS Electric Cars</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <hr>
+      <h3>The Downsides of AI Artistry</h3>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      <hr>
+      <h3>Is VC Funding Drying Up?</h3>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </section>
+
+  <section class="articles">
+    <div class="art">
+      <img class="retro-pc" src="/assets/images/image-retro-pcs.jpg" alt="">
+      <div class="art-list">
+        <h3>01</h3>
+        <h4>Reviving Retro PCs</h4>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="art">
+      <img src="/assets/images/image-top-laptops.jpg" alt="">
+      <div class="art-list">
+        <h3>02</h3>
+        <h4>Top 10 Laptops of 2022</h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="art">
+      <img src="/assets/images/image-gaming-growth.jpg" alt="">
+      <div class="art-list">
+        <h3>03</h3>
+        <h4>The Growth of Gaming</h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+<script>
+
+  nav = document.getElementById('nav');
+  body = document.getElementById('body')
+
+  function abrirMenu(){
+    if (nav.classList.contains('hidden')){
+      nav.classList.remove('hidden')
+      nav.classList.add('block')
+      body.classList.add('bg-gray-300')
+    }else{
+      nav.classList.remove('block')
+      nav.classList.add('hidden')
+      body.classList.remove('bg-gray-300')
+    }
+  }
+
+</script>
+
+</body>
+</html>
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- 
+
+  
+  
+
+  
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities. -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section{
+    @apply lg:grid lg:mx-[125px] grid-cols-3 lg:mb-[70px]
+}
+
+.hero{
+    @apply mx-[15px] lg:col-start-1 lg:col-span-2
+}
+
+.hero .img-hero-mobile{
+    @apply mb-[30px] lg:hidden
+}
+
+.hero .img-hero-desktop{
+    @apply hidden lg:block lg:h-[300px] 
+}
+
+.hero-flex{
+    @apply lg:flex lg:justify-end lg:mt-[30px]
+}
+
+.hero-flex-title{
+    @apply lg:w-1/2
+}
+
+.hero-flex-btn{
+    @apply lg:w-1/2
+}
+
+.hero h1{
+    @apply text-[40px] font-extrabold tracking-[2.5px] leading-[40px] mb-[25px] lg:text-[45px] lg:leading-[50px]
+}
+
+.hero p{
+    @apply mb-[30px] text-left text-[17px] lg:text-[14px] 
+}
+
+.hero button{
+    @apply bg-Soft-red text-white py-[15px] px-[40px] tracking-[5px] mb-[65px]
+}
+
+.news{
+    @apply bg-Very-dark-blue mx-[15px] lg:w-[311px]  py-[30px] px-[25px] lg:h-[500px] lg:col-start-3 mb-[60px] 
+}
+
+.news h2{
+    @apply text-Soft-orange text-[35px] mb-[20px] lg:font-bold
+}
+
+.news h3{
+    @apply text-Off-white mb-[10px] text-[18px] font-bold
+} 
+
+.news p{
+    @apply text-Grayish-blue text-[17px] lg:text-[13.5px]
+}
+
+.news hr{
+    @apply mb-[30px] mt-[30px]
+}
+
+.articles{
+    @apply flex flex-col lg:justify-between lg:flex-row lg:mx-[140px] mx-[15px] items-center
+}
+
+.art{
+    @apply mb-[33px] flex lg:w-1/3
+}
+
+.art img{
+    @apply h-[130px] mr-[22px]
+}
+
+
+.art-list{
+    @apply flex flex-col justify-between lg:justify-around
+}
+
+.art-list h3{
+    @apply text-[30px] lg:text-[20px] text-Grayish-blue
+}
+
+.art-list h4{
+    @apply text-[18px] lg:text-[15px] text-Very-dark-blue font-extrabold
+}
+
+.art-list p{
+    @apply text-[17px] lg:text-[12px]
+}
