@@ -1,2 +1,2 @@
-# FrontendMentor
-Challengue of Frontend mentor 
+# Frontend Mentor
+## Challenges of the FrontEndMentor page
