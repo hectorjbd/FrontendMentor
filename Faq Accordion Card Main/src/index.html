@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-KumbhSans bg-gradient-to-b from-Soft-violet to-Soft-blue min-h-screen relative">
+
+  <main class="flex flex-col lg:flex-row lg:items-center bg-white mx-auto h-auto w-[330px] lg:w-[810px] px-[20px] lg:mt-[130px] mt-[150px] lg:pt-[50px] lg:pr-[100px] lg:pb-[60px] rounded-2xl lg:overflow-hidden" >
+    <section class="lg:w-[50%] relative">
+      <img class="w-[240px] mt-[-110px] mx-auto block lg:hidden" src="/images/illustration-woman-online-mobile.svg" alt="Ilustration Woman">
+      <img class="hidden lg:block w-[510px] ml-[-85px] mt-0 mb-[-150px]" src="/images/illustration-woman-online-desktop.svg" alt="">
+      <img class="w-[240px] mt-[-75px] mx-auto lg:hidden" src="/images/bg-pattern-mobile.svg" alt="">
+      <img class="hidden lg:block w-[510px] ml-[-85px] mt-[-300px]" src="/images/bg-pattern-desktop.svg" alt="">
+    </section>
+    <img class="hidden lg:block absolute z-50 w-[88px] left-[185px] top-[215px]" src="/images/illustration-box-desktop.svg" alt="">
+    <section class="lg:w-[50%]">
+
+      <h1 class="text-center lg:text-left font-bold text-[30px] pb-[35px] mt-[30px] lg:mt-0">FAQ</h1>
+
+      <details class="details">
+        <summary class="list-none flex items-center justify-between text-[15px]">How many team members can I invite? <img class="h-[10px] w-[10px]" src="/images/icon-arrow-down.svg" alt=""></summary>
+        <p class="text-[12px] text-Dark-grayish-blue">
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </p>
+      </details>
+
+      <hr class="my-[20px] lg:my-[15px]">
+
+      <details class="details">
+        <summary class="list-none flex items-center justify-between text-[15px]">What is the maximum file upload size?<img class="h-[10px] w-[10px]" src="/images/icon-arrow-down.svg" alt=""></summary>
+        <p class="text-[12px] text-Dark-grayish-blue">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </details>
+
+      <hr class="my-[20px] lg:my-[15px]">
+
+      <details class="details">
+        <summary class="list-none flex items-center justify-between text-[15px]">How do I reset my password?<img class="h-[10px] w-[10px]" src="/images/icon-arrow-down.svg" alt=""></summary>
+        <p class="text-[12px] text-Dark-grayish-blue">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p>
+      </details>
+
+      <hr class="my-[20px] lg:my-[15px]">
+
+      <details class="details">
+        <summary class="list-none flex items-center justify-between text-[15px]">Can I cancel my subscription?<img class="h-[10px] w-[10px]" src="/images/icon-arrow-down.svg" alt=""></summary>
+        <p class="text-[12px] text-Dark-grayish-blue">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
+      </details>
+
+      <hr class="my-[20px] lg:my-[15px]">
+
+      <details class="details">
+        <summary class="list-none flex items-center justify-between text-[15px]">Do you provide additional support?<img class="h-[10px] w-[10px]" src="/images/icon-arrow-down.svg" alt=""></summary>
+        <p class="text-[12px] text-Dark-grayish-blue">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </details>
+      <hr class="my-[20px] lg:mt-[15px]">
+
+    </section>
+  </main>
+
+  <div class="attribution mt-8">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hector Brito</a>.
+  </div>
+</body>
+</html>

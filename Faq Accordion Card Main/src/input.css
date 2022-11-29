@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .details[open] summary{
+        font-weight: 700;
+    }
+
+    .details[open] summary img{
+        transform: rotate(180deg);
+        transition: 300ms;
+    }
+}
