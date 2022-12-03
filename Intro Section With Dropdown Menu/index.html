@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+    
+ 
+</head>
+<body id="body">
+
+  <nav>
+    <div class="navbar">
+      <img class="navbar__logo" src="/images/logo.svg" alt="Logo">
+      <ul class="navbar__list">
+        <li id="featureClick">Features<img class="arrow" src="/images/icon-arrow-down.svg" alt="Arrow">
+          <ul id="sublist" class="navbar__list-sublist">
+            <li><img class="navbar__list-sublist-icon" src="/images/icon-todo.svg" alt=""> Todo List</li>
+            <li><img class="navbar__list-sublist-icon" src="/images/icon-calendar.svg" alt=""> Calendar</li>
+            <li><img class="navbar__list-sublist-icon" src="/images/icon-reminders.svg" alt=""> Reminders</li>
+            <li><img class="navbar__list-sublist-icon" src="/images/icon-planning.svg" alt=""> Planning</li>
+          </ul>
+        </li>
+        <li id="companyClick">Company <img class="arrow2" src="/images/icon-arrow-down.svg" alt="Arrow">
+          <ul id="sublist2" class="navbar__list-sublist navbar__list-sublist-2">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="navbar__btn">
+      <button class="navbar__btn-login">Login</button>
+      <button class="navbar__btn-register">Register</button>
+    </div>
+
+    <img id="menuOpen" class="menu" src="/images/icon-menu.svg" alt="">
+    <div id="navigation" class="navigation">
+      <img id="menuClose" class="menu-close" src="/images/icon-close-menu.svg" alt="">
+      <div id="navSublist" class="navigation__sublist">
+        <ul>
+          <li>
+            <details>
+              <summary>Features <img src="/images/icon-arrow-down.svg" alt=""></summary>
+              <ul>
+                <li><img class="icon" src="/images/icon-todo.svg" alt="">Todo List</li>
+                <li><img class="icon" src="/images/icon-calendar.svg" alt="">Calendar</li>
+                <li><img class="icon" src="/images/icon-reminders.svg" alt="">Reminders</li>
+                <li><img class="icon" src="/images/icon-planning.svg" alt="">Planning</li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Company<img src="/images/icon-arrow-down.svg" alt=""></summary>
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </details>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+          <li><button class="navbar__btn-login2">Login</button></li>
+          <li><button class="navbar__btn-register2">Register</button></li>
+        </ul>
+      </div>      
+    </div>
+  </nav>
+
+  <main>
+    <div class="main__image">
+      <img class="main__img-desktop" src="/images/image-hero-desktop.png" alt="">
+      <img class="main__img-mobile" src="/images/image-hero-mobile.png" alt="">
+    </div>
+    <div class="main__content">
+      <h1 class="main__content-title">Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="main__btn">Learn more</button>
+      <div class="main__company">
+        <img src="/images/client-databiz.svg" alt="">
+        <img src="/images/client-audiophile.svg" alt="">
+        <img src="/images/client-meet.svg" alt="">
+        <img src="/images/client-maker.svg" alt="">
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hector Brito</a>.
+  </div>
+
+  <script>
+
+    let featureClick = document.getElementById('featureClick');
+    let companyClick = document.getElementById('companyClick');
+    let sublist = document.getElementById('sublist');
+    let sublist2 = document.getElementById('sublist2');
+    let arrow = document.querySelector('.arrow');
+    let arrow2 = document.querySelector('.arrow2');
+    let menuOpen = document.getElementById('menuOpen');
+    let menuClose = document.getElementById('menuClose');
+    let navigation = document.getElementById('navigation');
+    let navSublist = document.getElementById('navSublist');
+    let body = document.getElementById('body')
+
+    featureClick.onclick = function(){
+      sublist.classList.toggle('active');
+      arrow.classList.toggle('active');
+    }
+
+    companyClick.onclick = function(){
+      sublist2.classList.toggle('active');
+      arrow2.classList.toggle('active');
+    }
+    
+    menuOpen.onclick = function(){
+      navigation.classList.toggle('active');
+      menuClose.classList.toggle('active');
+      navSublist.classList.toggle('active');
+      body.style.backgroundColor = "hsl(0, 0%, 41%)"
+    }
+
+    menuClose.onclick = function(){
+      navigation.classList.toggle('active');
+      menuClose.classList.toggle('active');
+      navSublist.classList.toggle('active');
+      body.style.backgroundColor = "hsl(0, 0%, 98%)";
+    }
+
+
+  </script>
+
+</body>
+</html>
